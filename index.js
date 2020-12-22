@@ -6,7 +6,7 @@
  */
 export const sum = (a, b) => {
   // TODO: implement here
-  return a+b;
+  return a + b;
 }
 
 /**
@@ -65,9 +65,9 @@ export const filter = (arr, callback) => {
  */
 export const reduce = (arr, callback, initialValue) => {
   // TODO: implement here
-  let numbers = initialValue
+  let sum = initialValue
   for(let i=0;i<arr.length;i++){
-    numbers = callback(sum,arr[i],i)
+    sum = callback(sum,arr[i],i)
   }
-  return numbers;
+  return sum;
 }
